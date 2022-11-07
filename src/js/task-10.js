@@ -26,16 +26,10 @@ const createBoxex = (amount) => {
       item.style.width = `${30 + 10 * i}px`;
       item.style.height = `${30 + 10 * i}px`;
     } else {
-      // item.style.width = `${
-      //   divBox.lastChild.style.width + 10 * i
-      // }px`;
-      // item.style.height = `${
-      //   divBox.lastChild.style.height + 10 * i
-      // }px`;
-      // console.log(divBox.lastChild.style.width);
-      // console.log(divBox.lastChild.style.height);
-      // console.log(item.style.width);
-      // console.log(item.style.height);
+      item.style.width = `${parseInt(divBox.lastChild.style.width) + 10 * i}px`;
+      item.style.height = `${
+        parseInt(divBox.lastChild.style.height) + 10 * i
+      }px`;
     }
 
     itemsArr.push(item);
