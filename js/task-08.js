@@ -11,8 +11,11 @@ const formValidation = (event) => {
     alert("Необхідно заповнити всі поля!");
     return;
   }
-
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  const user = {
+    email: email.value,
+    password: password.value,
+  };
+  console.log(user);
   event.currentTarget.reset();
 };
 
